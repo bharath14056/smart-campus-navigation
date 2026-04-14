@@ -1,0 +1,13 @@
+com\smartcampus\navigation\config\DataSourceConfig.class
+com\smartcampus\navigation\repository\EdgeRepository.class
+com\smartcampus\navigation\config\WebConfig.class
+com\smartcampus\navigation\model\ShortestPathResponse.class
+com\smartcampus\navigation\model\Node.class
+com\smartcampus\navigation\model\Edge.class
+com\smartcampus\navigation\service\DijkstraService$NodeDistance.class
+com\smartcampus\navigation\config\DatabaseInitializer.class
+com\smartcampus\navigation\controller\NavigationController.class
+com\smartcampus\navigation\repository\NodeRepository.class
+com\smartcampus\navigation\model\ShortestPathRequest.class
+com\smartcampus\navigation\SmartCampusNavigationApplication.class
+com\smartcampus\navigation\service\DijkstraService.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.smartcampus.navigation.SmartCampusNavigationApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.98 s -- in com.smartcampus.navigation.SmartCampusNavigationApplicationTests

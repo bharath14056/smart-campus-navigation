@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Campus wayfinding made simple</p>
+                <h1>Smart Campus Navigation</h1>
+                <p class="subtitle">
+                    Choose any two locations inside the college campus and get the shortest route with step-by-step directions.
+                </p>
+            </div>
+            <div class="hero-badge">
+                <span class="badge-label">Algorithm</span>
+                <strong>Dijkstra</strong>
+                <small>Weighted shortest path</small>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="panel form-panel">
+                <h2>Find Your Path</h2>
+                <form id="path-form">
+                    <label for="start-location">Starting Location</label>
+                    <select id="start-location" required>
+                        <option value="">Select starting location</option>
+                    </select>
+
+                    <label for="end-location">Destination</label>
+                    <select id="end-location" required>
+                        <option value="">Select destination</option>
+                    </select>
+
+                    <button type="submit" id="find-path-btn">Find Path</button>
+                </form>
+
+                <div class="status-card" id="status-card">
+                    <span class="status-dot"></span>
+                    <p id="status-text">Loading campus locations...</p>
+                </div>
+            </section>
+
+            <section class="panel result-panel">
+                <div class="result-header">
+                    <h2>Route Result</h2>
+                    <span id="total-weight" class="distance-pill hidden"></span>
+                </div>
+
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon">➜</div>
+                    <p>Select two locations to see the shortest path across campus.</p>
+                </div>
+
+                <div id="result-content" class="hidden">
+                    <div class="path-summary">
+                        <h3>Path</h3>
+                        <p id="path-text" class="path-text"></p>
+                    </div>
+
+                    <div class="visual-path">
+                        <h3>Visual Path</h3>
+                        <ul id="path-list" class="path-list"></ul>
+                    </div>
+
+                    <div class="directions-block">
+                        <h3>Directions</h3>
+                        <ol id="directions-list" class="directions-list"></ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
